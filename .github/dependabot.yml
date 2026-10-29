@@ -9,6 +9,10 @@ updates:
       dotnet-packages:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: Microsoft.OpenApi
+        update-types:
+          - version-update:semver-major
 
   - package-ecosystem: github-actions
     directory: /
